@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+
+  client:
+    image: af912/react-landing-page
+    build: build
+    environment:
+      REACT_APP_AUTH0_DOMAIN: dev-589liq0e.us.auth0.com
+      REACT_APP_AUTH0_CLIENT_ID: 9CLr5sVc7dvkh88M8CvLXV4fMC1jsHXx
+      REACT_APP_AUTH0_AUDIENCE: https://express.sample
+      REACT_APP_SERVER_URL: http://localhost:6060
+      SKIP_PREFLIGHT_CHECK: true
+    ports:
+      - "3000:3000"
+    restart: on-failure
+
+  upload:
+    image: af912/upload-api
+    environment:
+      CLOUDINARY_CLOUD_NAME: af912
+      CLOUDINARY_API_KEY: 314766338563889
+      CLOUDINARY_API_SECRET: TvsxVzYmZfoO81pRHfp15lCmAMQ
+      MONGODB_USERNAME: vscodeUser
+      MONGODB_USER_PASSWORD: 2RPBJrrvH6dRqPY5
+      PORT: 4000
+    ports:
+      - "4000:4000"
+    restart: on-failure
