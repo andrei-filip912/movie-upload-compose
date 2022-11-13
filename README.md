@@ -11,8 +11,8 @@ To start up the project open a terminal window and go to the rootfolder of this 
 | upload                    | localhost:4000 | 4000 | API      | NodeJS & ExpressJS    |
 
 ## Related repositories
-..*[documentation](https://github.com/andrei-filip912/movie-upload-documentation/blob/main/End%20to%20end%20testing.docx)
-..*[client app](https://github.com/andrei-filip912/client)
-..*[upload api](https://github.com/andrei-filip912/upload)
+..* [documentation](https://github.com/andrei-filip912/movie-upload-documentation/blob/main/End%20to%20end%20testing.docx)
+..* [client app](https://github.com/andrei-filip912/client)
+..* [upload api](https://github.com/andrei-filip912/upload)
 
 
