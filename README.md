@@ -1,5 +1,9 @@
 # movie-upload-compose
 
+## App description
+This application is meat to help users to store mp4 files. The movies are uploaded to the cloud and can be accessed from anywhere.
+
+## Get started
 To start up the project open a terminal window and go to the rootfolder of this project. Run the following line:
 
 `docker-compose up`
